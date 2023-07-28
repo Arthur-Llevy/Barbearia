@@ -32,7 +32,7 @@ export const AddCutToClient = () => {
 
 	const handleAddCut = async () => {
 		axios.patch(`${APIURL}/barbeiro/adicionarCorte`, {
-			id: textInputId.current.value
+			id: clientId
 		}, {
 			headers: {
 				'Content-Type': 'application/json',
