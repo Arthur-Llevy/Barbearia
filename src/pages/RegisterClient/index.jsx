@@ -73,7 +73,7 @@ export const RegisterClient = () => {
 						alert(response.data.message);
 						axios.post(`${APIURL}/login/cliente`, {								
 							email: inputEmail.current.value,
-							senha: textInputPassword.current.value							
+							password: textInputPassword.current.value							
 						}, {
 							'Content-Type': 'application/json'
 						})

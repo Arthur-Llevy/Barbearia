@@ -15,7 +15,7 @@ export const AddCutToClient = () => {
 
 	const confirm = async () => {
 		axios.post(`${APIURL}/barbeiro/procurarCliente`, {
-			id: textInputId.current.value
+			id: clientId
 		}, {
 			headers: {
 				'Content-Type': 'application/json',
